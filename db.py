@@ -6,8 +6,8 @@ class Database:
         self.connection = None
         try:
             self.connection = pymysql.connect(
-                host='localhost',  # 로컬 PC
-                # host='mariadb', # cloudtype 서버
+                #host='localhost',  # 로컬 PC
+                host='mariadb', # cloudtype 서버
                 port=3306,
                 database='test',  # test 데이터베이스 사용
                 user='root',
